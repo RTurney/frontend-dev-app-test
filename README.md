@@ -5,12 +5,14 @@ The aim of this test is to see how you go about solving the problem. We will use
 
 Ideally we would like to see it built using ReactJS, but if you don’t have experience using react and would prefer to do it with vanilla JS then go ahead
 
-Create a small app to run in the browser that can fetch and display a grid of lessons no more than 4 items wide from the following API:
+The only criteria is to create a small app to run in the browser that can fetch and display a grid of lessons no more than 4 items wide from the following API:
 
 [Sample Lessons API](http://bbtest.mocklab.io/lessons)
 
 
-Some things to think about if you get time:
+Feel free to be as creative as you like with it.
+
+Some ideas of things to think about, if you get time:
 
 - Accessibility
 - Filtering
