@@ -7,12 +7,12 @@ Ideally we would like to see it built using ReactJS, but if you don’t have exp
 
 The only criteria is to create a small app to run in the browser that can fetch and display a grid of lessons no more than 4 items wide from the following API:
 
-[Sample Lessons API](http://bbtest.mocklab.io/lessons)
+[Sample Lessons API](http://testing.blackbullion.com/_dev/api/lessons)
 
 
 Feel free to be as creative as you like with it.
 
-Some ideas of things to think about, if you get time:
+Some ideas of things to think about, if you get the time:
 
 - Accessibility
 - Filtering
