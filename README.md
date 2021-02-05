@@ -11,8 +11,7 @@ When the page loads, you should fetch the data to render the lessons.
 
 The library items in our platform look like this, if you want to copy that, alternatively feel free to be as creative as you like with it.
 
-![Library Item](img/library_item.png "Libray Item")
-
+<img src="./img/library_item.png" alt="alt text" width="250" >
 
 Some ideas of things to think about, if you get the time:
 
@@ -38,7 +37,7 @@ Ideally we would like to see it built using ReactJS, but if you don’t have exp
 
 # Deliverable
 
-Please email us once you have completed the task with either link to a repository or a zip file containing your project (with the gcommit history). Be sure to include a set of instructions on how to install dependencies and run the project.
+Please email us once you have completed the task with either link to a repository or a zip file containing your project (with the git commit history). Be sure to include a set of instructions on how to install dependencies and run the project.
 
 
 If you have any questions please email [mark@blackbullion.com](mailto:mark@blackbullion.com)
