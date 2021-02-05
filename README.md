@@ -3,7 +3,7 @@
 
 The aim of this test is for us to be able to assess your ablity to write well defined HTML, CSS and Javascript, and also to see how you go about solving the problem. We will use it as the basis of a discussion in the next interview stage. There's no trick questions or hard rules on what you need to do.
 
-# Brief 
+## Brief 
 
 We would like you to build a fast responsive, mobile first library page. The items in the library will be lessons that can be retrieved from our development API. 
 
@@ -22,7 +22,7 @@ Some ideas of things to think about, if you get the time:
 - Tests
 
 
-# Data
+## Data
 
 We've provided a development api endpoint that can be accessed using the following URL:
 
@@ -30,12 +30,12 @@ We've provided a development api endpoint that can be accessed using the followi
 
 
 
-# Technology
+## Technology
 
 Ideally we would like to see it built using ReactJS, but if you don’t have experience using react and would prefer to do it with another framework or vanilla JS then go ahead. We do discourage the use of CSS frameworks such as Bootstrap or Material UI as we would like to see your CSS skills.
 
 
-# Deliverable
+## Deliverable
 
 Please email us once you have completed the task with either link to a repository or a zip file containing your project (with the git commit history). Be sure to include a set of instructions on how to install dependencies and run the project.
 
