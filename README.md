@@ -37,7 +37,7 @@ Ideally we would like to see it built using ReactJS, but if you don’t have exp
 
 ## Deliverable
 
-Please email us once you have completed the task with either link to a repository or a zip file containing your project (with the git commit history). Be sure to include a set of instructions on how to install dependencies and run the project.
+Please email us once you have completed the task with either link to a repository or a bundled file (our mail provider blocks .zip file) containing your project (with the git commit history). Be sure to include a set of instructions on how to install dependencies and run the project.
 
 
 If you have any questions please email [mark@blackbullion.com](mailto:mark@blackbullion.com)
