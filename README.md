@@ -26,7 +26,7 @@ Some ideas of things to think about, if you get the time:
 
 We've provided a development api endpoint that can be accessed using the following URL:
 
-[Sample Lessons API](http://www.blackbullion.com/_dev/api/lessons)
+[Sample Lessons API](https://www.blackbullion.com/_dev/api/lessons)
 
 
 
