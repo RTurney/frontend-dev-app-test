@@ -25,7 +25,7 @@ Some ideas of things to think about, if you get the time:
 
 We've provided a development api endpoint that can be accessed using the following URL:
 
-[Sample Pathways API](https://www.blackbullion.com/_dev/api/pathways)
+`https://www.blackbullion.com/_dev/api/pathways`
 
 ## Technology
 
