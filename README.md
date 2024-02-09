@@ -9,13 +9,12 @@ We would like you to build a fast, accessible and responsive (think about how th
 
 When the screen loads, you should fetch the data to render the pathways.
 
-The library items in our web platform look like this, if you want to copy that, alternatively feel free to be as creative as you like with it.
+The library items on our web platform look like this. If you want to copy the styles and adapt them for a mobile application, feel free to do so. Alternatively, you can be as creative as you like with them.
 
 <img src="./img/library_item.png" alt="Pathway tile" width="250" >
 
 Some ideas of things to think about, if you get the time:
 
-- Filtering
 - Sorting
 - Pagination (the api doesn't support this, but you could implement it on the frontend)
 - Testing
@@ -28,8 +27,7 @@ We've provided a development api endpoint that can be accessed using the followi
 
 ## Technology
 
-We use React Native and ideally so should your solution.
-
+Feel free to use any external libraries to enhance your React Native solution. We do not expect you to implement things like navigation or state management from scratch.
 
 ## Deliverable
 
