@@ -1,37 +1,50 @@
+# Welcome to your Expo app 👋
 
-# Frontend Engineer Coding Test
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-The aim of this test is for us to be able to assess your ablity to build a well-crafted React Native application, and also to see how you go about solving the problem. We will use it as the basis of a discussion in the next interview stage. There are no trick questions or hard rules on what you need to do.
+## Get started
 
-## Brief
+1. Install dependencies
 
-We would like you to build a fast, accessible and responsive (think about how the screen will look on different device sizes) library screen. The items in the library will be learning pathways that can be retrieved from our development API.
+   ```bash
+   npm install
+   ```
 
-When the screen loads, you should fetch the data to render the pathways.
+2. Start the app
 
-The library items on our web platform look like this. If you want to copy the styles and adapt them for a mobile application, feel free to do so. Alternatively, you can be as creative as you like with them.
+   ```bash
+    npx expo start
+   ```
 
-<img src="./img/library_item.png" alt="Pathway tile" width="250" >
+In the output, you'll find options to open the app in a
 
-Some ideas of things to think about, if you get the time:
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-- Sorting
-- Pagination (the api doesn't support this, but you could implement it on the frontend)
-- Testing
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Data
+## Get a fresh project
 
-We've provided a development api endpoint that can be accessed using the following URL:
+When you're ready, run:
 
-[https://www.blackbullion.com/api/_dev/pathways](https://blackbullion.com/api/_dev/pathways)
+```bash
+npm run reset-project
+```
 
-## Technology
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-Feel free to use any external libraries to enhance your React Native solution. We do not expect you to implement things like navigation or state management from scratch.
+## Learn more
 
-## Deliverable
+To learn more about developing your project with Expo, look at the following resources:
 
-Please email us once you have completed the task with a link to a repository. Be sure to include a set of instructions on how to install dependencies and run the project.
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
+## Join the community
 
-If you have any questions please email [tudor@blackbullion.com](mailto:tudor@blackbullion.com)
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
