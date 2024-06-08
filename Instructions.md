@@ -11,7 +11,7 @@ When the screen loads, you should fetch the data to render the pathways.
 
 The library items on our web platform look like this. If you want to copy the styles and adapt them for a mobile application, feel free to do so. Alternatively, you can be as creative as you like with them.
 
-<img src="./img/library_item.png" alt="Pathway tile" width="250" >
+<img src="img/library_item.png" alt="Pathway tile" width="250" >
 
 Some ideas of things to think about, if you get the time:
 
