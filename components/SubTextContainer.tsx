@@ -37,10 +37,15 @@ const DotIconContainer = styled(View)`
 `
 
 const DurationContainer = styled(View)`
+  padding: 3px;
   justify-content: center;
 `
 
 export const SubTextContainer: FC<subTextProps> = ({type, duration}) => {
+
+  const capitalise = (text: string) => {
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  }
 
   return (
     <SubContainer>
@@ -48,7 +53,7 @@ export const SubTextContainer: FC<subTextProps> = ({type, duration}) => {
       <Icon source={require('../assets/icons8-book-50.png')}/>
     </IconContainer>
     <TypeContainer>
-      <Text>{type}</Text>
+      <Text>{capitalise(type)}</Text>
     </TypeContainer>
     <DotIconContainer>
       <DotIcon source={require('../assets/circle-grey.png')}/>

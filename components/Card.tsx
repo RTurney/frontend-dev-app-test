@@ -26,7 +26,7 @@ const TitleText = styled(Text)`
   fontWeight: bold;
   color: purple;
   align-self: left;
-  padding: 10px;
+  padding: 5px;
 `
 export const Card: FC<cardProps> = ({data}) => {
   
