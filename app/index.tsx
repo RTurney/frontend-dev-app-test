@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import { FlatList, SafeAreaView } from "react-native";
+import { FlatList, SafeAreaView, Text } from "react-native";
 import { pathwayData } from '@/interfaces/pathwayData';
 import { Card } from '@/components/Card';
 
 export default function Pathways() {
   const [data, setData] = useState<pathwayData[]>([{
-    id: 0,
+    id: -1,
     title: "",
     url: "",
     intro: "", 
@@ -14,23 +14,25 @@ export default function Pathways() {
     type: "",
     has_summative_assessment: false
   }]);
+ const [loaded, setLoaded] = useState<boolean>(false)
 
   useEffect(() => {
-    fetch(
-      'https://blackbullion.com/api/_dev/pathways'
-      ).then(response => response.json()).then(json => setData(json));
-  }, []);
+    if (!loaded) {
+      fetch(
+        'https://blackbullion.com/api/_dev/pathways'
+        ).then(response => response.json()).then(json => setData(json));
+        setLoaded(true);
+    }
+  }, [data]);
 
-  console.log(data);
   return (
     <SafeAreaView>
+      {data[0].id !== -1 ? 
       <FlatList
         data={data}
         renderItem={({item}) => <Card data={item} />}
         keyExtractor={item => String(item.id)}
-        />
-      {data && data.map((pathway) => {
-      return <Card data={pathway} />})}
+        /> : <Text>Loading</Text>} 
     </SafeAreaView>
   );
 };
