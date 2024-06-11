@@ -14,14 +14,17 @@ const DisplayedImage = styled(Image)`
   border-radius: 20%; 
 `
 interface ImageProps {
-  imageUri: string
-}
+  imageUri: string;
+  accessibilityLabel: string;
+};
 
-export const PathwayImage: FC<ImageProps> = ({imageUri}) => {
+export const PathwayImage: FC<ImageProps> = ({imageUri, accessibilityLabel}) => {
 
   return (
     <ImageContainer>
-      <DisplayedImage source={imageUri ? {uri: imageUri} : undefined}/>
+      <DisplayedImage 
+      source={imageUri ? {uri: imageUri} : undefined} 
+      accessibilityLabel={accessibilityLabel + ' thumbnail'}/>
     </ImageContainer>
   )
 }

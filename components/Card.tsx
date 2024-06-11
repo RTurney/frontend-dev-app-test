@@ -34,7 +34,7 @@ export const Card: FC<cardProps> = ({title, image, type, intro, duration, url, h
   
   return (
     <CardContainer>
-      <PathwayImage imageUri={image} />
+      <PathwayImage imageUri={image} accessibilityLabel={title}/>
       <SubTextContainer type={type} duration={duration} hasAssessment={hasAssessment}/>
       <TitleText>{title}</TitleText>
       <Descriptiontext>{intro}</Descriptiontext>
