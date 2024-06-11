@@ -39,7 +39,6 @@ const Descriptiontext = styled(Text)`
   letter-spacing: 1pt;
 `
 
-
 export const Card: FC<cardProps> = ({title, image, type, intro, duration, url, hasAssessment}) => {
   
   return (

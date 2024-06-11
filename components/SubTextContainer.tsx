@@ -3,12 +3,7 @@ import { View, Text } from 'react-native';
 import { styled } from 'styled-components';
 import { BookIcon } from './Icons/BookIcon';
 import { DotIcon } from './Icons/DotIcon';
-
-type subTextProps = {
-  type: string,
-  duration: string,
-  hasAssessment: boolean;
-}
+import { subTextProps } from '@/interfaces/subTextProps';
 
 const SubContainer = styled(View)`
   padding: 5px;
