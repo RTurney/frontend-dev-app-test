@@ -1,14 +1,15 @@
 import React, {useEffect, useState} from 'react';
-import { FlatList, SafeAreaView, Text } from "react-native";
+import { FlatList, SafeAreaView } from "react-native";
 import { pathwayData } from '@/interfaces/pathwayData';
 import { Card } from '@/components/Card';
 import { styled } from 'styled-components';
+import { LoadingScreen } from '@/components/LoadingScreen';
 
 const Screen = styled(SafeAreaView)`
   background-color: black;
   display: flex;
   width: 100%;
-  allign-items: center;
+  align-items: center;
 `
 
 export default function Pathways() {
@@ -48,7 +49,8 @@ export default function Pathways() {
           type={item.type} 
         />}
         keyExtractor={item => String(item.id)}
-        /> : <Text>Loading</Text>} 
+        /> : <LoadingScreen />     
+        } 
     </Screen>
   );
 };
