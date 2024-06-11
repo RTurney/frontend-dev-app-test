@@ -38,7 +38,15 @@ export default function Pathways() {
       {data[0].id !== -1 ? 
       <FlatList
         data={data}
-        renderItem={({item}) => <Card data={item} />}
+        renderItem={({item}) => 
+        <Card 
+          title={item.title}
+          image={item.image}
+          url={item.url}
+          intro={item.intro}
+          duration={item.duration}
+          type={item.type} 
+        />}
         keyExtractor={item => String(item.id)}
         /> : <Text>Loading</Text>} 
     </Screen>

@@ -1,18 +1,17 @@
 import React, {FC} from 'react';
-import { Text, Image, View } from 'react-native';
-import { pathwayData } from '@/interfaces/pathwayData';
+import { Text, View } from 'react-native';
 import { styled } from 'styled-components';
 import { SubTextContainer } from './SubTextContainer';
+import { PathwayImage } from './PathwayImage';
 
 type cardProps = {
-  data: pathwayData
+  title: string
+  url: string,
+  intro: string, 
+  duration: string, 
+  image: string, 
+  type: string,
 }
-
-const PathwayImage = styled(Image)`
-  height: 200px;
-  width: 100%;
-  border-radius: 20%; 
-`
 
 const CardContainer = styled(View)`
   padding: 2%;
@@ -30,23 +29,15 @@ const TitleText = styled(Text)`
   padding: 5px;
 `
 
-const ImageContainer = styled(View)`
-  height: 20vh;
-  box-shadow: 0px 2px 2px grey;
-  padding: 5px;
-`
-
-export const Card: FC<cardProps> = ({data}) => {
+export const Card: FC<cardProps> = ({title, image, type, intro, duration, url}) => {
   
   return (
     <CardContainer>
-      <ImageContainer>
-        <PathwayImage source={data.image ? {uri: data.image} : undefined}/>
-      </ImageContainer>
-      <SubTextContainer type={data.type} duration={data.duration}/>
-      <TitleText>{data.title}</TitleText>
-      <Text>{data.intro}</Text>
-      <Text>url: {data.url}</Text>
+      <PathwayImage imageUri={image} />
+      <SubTextContainer type={type} duration={duration}/>
+      <TitleText>{title}</TitleText>
+      <Text>{intro}</Text>
+      <Text>url: {url}</Text>
     </CardContainer>
   )
 }
