@@ -2,8 +2,8 @@ import { View, Image } from "react-native";
 import { styled } from "styled-components";
 
 const Icon = styled(Image)`
-  height: 5px;
-  width: 5px;
+  height: 3px;
+  width: 3px;
 `
 
 const DotIconContainer = styled(View)`
