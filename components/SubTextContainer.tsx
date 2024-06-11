@@ -17,7 +17,7 @@ const TextContainer = styled(View)`
 `
 
 const TypeText = styled(Text)`
-  letter-spacing: 0.5pt;
+  letter-spacing: 0.5px;
 `
 
 export const SubTextContainer: FC<subTextProps> = ({type, duration, hasAssessment}) => {

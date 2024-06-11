@@ -10,30 +10,29 @@ const CardContainer = styled(View)`
   padding: 2%;
   width: 95vw;
   background-color: white;
-  border-radius: 20%;
   margin: 2%;
 `
 
 const TitleText = styled(Text)`
-  fontSize: 20pts;
+  fontSize: 20px;
   fontWeight: bold;
   color: purple;
   align-self: left;
   padding: 5px;
-  letter-spacing: 1pt;
+  letter-spacing: 0.5px;
 `
 
 const Descriptiontext = styled(Text)`
-  font-size: 16pts;
+  font-size: 16px;
   padding: 5px;
-  line-height: 20pt;
-  letter-spacing: 1pt;
+  line-height: 20px;
+  letter-spacing: 0.5px;
 `
 
 export const Card: FC<cardProps> = ({title, image, type, intro, duration, url, hasAssessment}) => {
   
   return (
-    <CardContainer>
+    <CardContainer style={[{borderRadius: 20}]}>
       <PathwayImage imageUri={image} accessibilityLabel={title}/>
       <SubTextContainer type={type} duration={duration} hasAssessment={hasAssessment}/>
       <TitleText>{title}</TitleText>
