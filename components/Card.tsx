@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import { Text, View } from 'react-native';
+import { Linking, Text, View } from 'react-native';
 import { styled } from 'styled-components';
 import { SubTextContainer } from './SubTextContainer';
 import { PathwayImage } from './PathwayImage';
@@ -29,6 +29,12 @@ const TitleText = styled(Text)`
   padding: 5px;
 `
 
+const UrlText = styled(Text)`
+  color: purple;
+  padding: 5px;
+  fontWeight: bold;
+`
+
 export const Card: FC<cardProps> = ({title, image, type, intro, duration, url}) => {
   
   return (
@@ -37,7 +43,7 @@ export const Card: FC<cardProps> = ({title, image, type, intro, duration, url}) 
       <SubTextContainer type={type} duration={duration}/>
       <TitleText>{title}</TitleText>
       <Text>{intro}</Text>
-      <Text>url: {url}</Text>
+      <UrlText onPress={() => Linking.openURL(url)}>View pathway</UrlText>
     </CardContainer>
   )
 }
