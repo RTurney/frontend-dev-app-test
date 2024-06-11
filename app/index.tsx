@@ -47,6 +47,7 @@ export default function Pathways() {
           intro={item.intro}
           duration={item.duration}
           type={item.type} 
+          hasAssessment={item.has_summative_assessment}
         />}
         keyExtractor={item => String(item.id)}
         /> : <LoadingScreen />     

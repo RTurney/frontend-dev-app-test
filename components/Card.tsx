@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import { Linking, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { styled } from 'styled-components';
 import { SubTextContainer } from './SubTextContainer';
 import { PathwayImage } from './PathwayImage';
@@ -12,6 +12,7 @@ type cardProps = {
   duration: string, 
   image: string, 
   type: string,
+  hasAssessment: boolean;
 }
 
 const CardContainer = styled(View)`
@@ -39,12 +40,12 @@ const Descriptiontext = styled(Text)`
 `
 
 
-export const Card: FC<cardProps> = ({title, image, type, intro, duration, url}) => {
+export const Card: FC<cardProps> = ({title, image, type, intro, duration, url, hasAssessment}) => {
   
   return (
     <CardContainer>
       <PathwayImage imageUri={image} />
-      <SubTextContainer type={type} duration={duration}/>
+      <SubTextContainer type={type} duration={duration} hasAssessment={hasAssessment}/>
       <TitleText>{title}</TitleText>
       <Descriptiontext>{intro}</Descriptiontext>
       <URLText url={url} />

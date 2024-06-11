@@ -6,7 +6,8 @@ import { DotIcon } from './Icons/DotIcon';
 
 type subTextProps = {
   type: string,
-  duration: string
+  duration: string,
+  hasAssessment: boolean;
 }
 
 const SubContainer = styled(View)`
@@ -15,7 +16,7 @@ const SubContainer = styled(View)`
   align-self: left;
 `
 
-const TypeContainer = styled(View)`
+const TextContainer = styled(View)`
   padding: 3px;
   justify-content: center;
 `
@@ -24,12 +25,7 @@ const TypeText = styled(Text)`
   letter-spacing: 0.5pt;
 `
 
-const DurationContainer = styled(View)`
-  padding: 3px;
-  justify-content: center;
-`
-
-export const SubTextContainer: FC<subTextProps> = ({type, duration}) => {
+export const SubTextContainer: FC<subTextProps> = ({type, duration, hasAssessment}) => {
 
   const capitalise = (text: string) => {
     return text.charAt(0).toUpperCase() + text.slice(1);
@@ -38,13 +34,20 @@ export const SubTextContainer: FC<subTextProps> = ({type, duration}) => {
   return (
     <SubContainer>
       <BookIcon />
-      <TypeContainer>
+      <TextContainer>
         <TypeText>{capitalise(type)}</TypeText>
-      </TypeContainer>
+      </TextContainer>
       <DotIcon />
-      <DurationContainer>
-        <Text>{duration}</Text>
-      </DurationContainer>
+      <TextContainer>
+        <TypeText>{duration}</TypeText>
+      </TextContainer>
+      {hasAssessment ? 
+      <>
+        <DotIcon />
+        <TextContainer>
+          <TypeText>Assessment Required</TypeText>
+        </TextContainer>
+      </> : null}
     </SubContainer>
   )
 }
