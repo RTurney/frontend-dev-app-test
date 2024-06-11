@@ -4,16 +4,7 @@ import { styled } from 'styled-components';
 import { SubTextContainer } from './SubTextContainer';
 import { PathwayImage } from './PathwayImage';
 import { URLText } from './UrlText';
-
-type cardProps = {
-  title: string
-  url: string,
-  intro: string, 
-  duration: string, 
-  image: string, 
-  type: string,
-  hasAssessment: boolean;
-}
+import { cardProps } from '@/interfaces/cardProps';
 
 const CardContainer = styled(View)`
   padding: 2%;
