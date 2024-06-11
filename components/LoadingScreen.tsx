@@ -11,7 +11,7 @@ const LoadingView = styled(View)`
 `
 
 const LoadingText = styled(Text)`
-  color: white;
+  color: #white;
   padding: 5%;
 `
 
@@ -19,7 +19,7 @@ export const LoadingScreen = () => {
 
   return (
     <LoadingView>
-      <ActivityIndicator size={'large'} color={'purple'}/>
+      <ActivityIndicator size={'large'} color={'white'}/>
       <LoadingText>Loading Pathways...</LoadingText>
     </LoadingView>  
   )

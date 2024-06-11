@@ -1,10 +1,10 @@
 import React, {FC} from 'react';
-import { View, Image } from 'react-native';
+import { View, Image, Platform } from 'react-native';
 import { styled } from 'styled-components';
 
 const ImageContainer = styled(View)`
   box-shadow: 0px 2px 2px grey;
-  padding: 5px;
+  margin: 5px;
   height: 15vh;
 `
 
@@ -19,7 +19,7 @@ interface ImageProps {
 export const PathwayImage: FC<ImageProps> = ({imageUri, accessibilityLabel}) => {
 
   return (
-    <ImageContainer>
+    <ImageContainer style={Platform.OS === 'android' ? {backgroundColor: 'white', elevation: 4, borderRadius: 20, shadowColor: 'black'} : {}}>
       <DisplayedImage 
       source={imageUri ? {uri: imageUri} : undefined} 
       accessibilityLabel={accessibilityLabel + ' thumbnail'}
