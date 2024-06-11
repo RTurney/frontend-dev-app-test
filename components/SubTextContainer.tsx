@@ -1,5 +1,5 @@
-import React, {FC} from 'react';
-import { View, Text, Image } from 'react-native';
+import React, { FC } from 'react';
+import { View, Text } from 'react-native';
 import { styled } from 'styled-components';
 import { BookIcon } from './Icons/BookIcon';
 import { DotIcon } from './Icons/DotIcon';
@@ -20,6 +20,10 @@ const TypeContainer = styled(View)`
   justify-content: center;
 `
 
+const TypeText = styled(Text)`
+  letter-spacing: 0.5pt;
+`
+
 const DurationContainer = styled(View)`
   padding: 3px;
   justify-content: center;
@@ -35,7 +39,7 @@ export const SubTextContainer: FC<subTextProps> = ({type, duration}) => {
     <SubContainer>
       <BookIcon />
       <TypeContainer>
-        <Text>{capitalise(type)}</Text>
+        <TypeText>{capitalise(type)}</TypeText>
       </TypeContainer>
       <DotIcon />
       <DurationContainer>

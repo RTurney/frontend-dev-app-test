@@ -3,6 +3,7 @@ import { Linking, Text, View } from 'react-native';
 import { styled } from 'styled-components';
 import { SubTextContainer } from './SubTextContainer';
 import { PathwayImage } from './PathwayImage';
+import { URLText } from './UrlText';
 
 type cardProps = {
   title: string
@@ -22,18 +23,21 @@ const CardContainer = styled(View)`
 `
 
 const TitleText = styled(Text)`
-  fontSize: 20px;
+  fontSize: 20pts;
   fontWeight: bold;
   color: purple;
   align-self: left;
   padding: 5px;
+  letter-spacing: 1pt;
 `
 
-const UrlText = styled(Text)`
-  color: purple;
+const Descriptiontext = styled(Text)`
+  font-size: 16pts;
   padding: 5px;
-  fontWeight: bold;
+  line-height: 20pt;
+  letter-spacing: 1pt;
 `
+
 
 export const Card: FC<cardProps> = ({title, image, type, intro, duration, url}) => {
   
@@ -42,8 +46,8 @@ export const Card: FC<cardProps> = ({title, image, type, intro, duration, url}) 
       <PathwayImage imageUri={image} />
       <SubTextContainer type={type} duration={duration}/>
       <TitleText>{title}</TitleText>
-      <Text>{intro}</Text>
-      <UrlText onPress={() => Linking.openURL(url)}>View pathway</UrlText>
+      <Descriptiontext>{intro}</Descriptiontext>
+      <URLText url={url} />
     </CardContainer>
   )
 }
