@@ -11,7 +11,7 @@ const LoadingView = styled(View)`
 `
 
 const LoadingText = styled(Text)`
-  color: #white;
+  color: white;
   padding: 5%;
 `
 

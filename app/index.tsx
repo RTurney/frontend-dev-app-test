@@ -1,18 +1,19 @@
-import React, {useEffect, useState} from 'react';
-import { FlatList, SafeAreaView } from "react-native";
+import React, { useEffect, useState } from 'react';
+import { SafeAreaView } from "react-native";
 import { pathwayData } from '@/interfaces/pathwayData';
-import { Card } from '@/components/Card';
 import { styled } from 'styled-components';
 import { LoadingScreen } from '@/components/LoadingScreen';
+import { Pathways } from '@/components/Pathways';
 
 const Screen = styled(SafeAreaView)`
   background-color: black;
   display: flex;
   width: 100%;
   align-items: center;
+  flex: 1;
 `
 
-export default function Pathways() {
+export default function index() {
   const [data, setData] = useState<pathwayData[]>([{
     id: -1,
     title: "",
@@ -37,20 +38,7 @@ export default function Pathways() {
   return (
     <Screen>
       {data[0].id !== -1 ? 
-      <FlatList
-        data={data}
-        renderItem={({item}) => 
-        <Card 
-          title={item.title}
-          image={item.image}
-          url={item.url}
-          intro={item.intro}
-          duration={item.duration}
-          type={item.type} 
-          hasAssessment={item.has_summative_assessment}
-        />}
-        keyExtractor={item => String(item.id)}
-        /> : <LoadingScreen />     
+        <Pathways data={data} /> : <LoadingScreen />     
         } 
     </Screen>
   );
