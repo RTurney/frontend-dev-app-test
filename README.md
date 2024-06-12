@@ -1,50 +1,52 @@
-# Welcome to your Expo app 👋
+# This is the Blackbullion Frontend dev test app
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Hi, this is my attempt at the Blackbullion front-end dev test app. I have included the initial instructions in the Instructions.md file. 
 
 ## Get started
+To get the app up and running, you will need to run the following steps below. Additionally you will need to ensure that you have your environment set up for expo emulation following the React-Native guides [here](https://reactnative.dev/docs/set-up-your-environment)
 
-1. Install dependencies
+Next you will need to ensure you have a node version manager (NVM) installed. You can download NVM by following the instructions [here](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/).
 
-   ```bash
+After that you are free to begin the setup by folliwng the steps below: 
+
+
+1. Switch to the correct NVM version
+   
+   ```
+   nvm use
+   ```
+   This will switch you to a version of node which is usable with this project. You may need to install this version of node if you do not already have it in your version manager
+
+
+ 2. Install dependencies
+
+   ```
    npm install
    ```
 
-2. Start the app
+3. Start the app
 
-   ```bash
-    npx expo start
    ```
+    npm run start
+   ```
+   Once the app has started, it will begin running metro. You will have a choice of running the app either on an Android emulator, iOS simulator or even your own device if you scan the expo QR code. 
 
-In the output, you'll find options to open the app in a
+   Once the app is loaded, you should be met by the following screen: 
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   <img src="img/screenshot.png.png" alt="App Screenshot" width="250" >
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Testing 
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+To run tests in this app please run the following command:
+```
+   npm run test
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+To stop the tests and close down the watcher press Ctrl+C in the terminal.
 
-## Learn more
+## Linting
+This app is setup with a basic expo linter. To run the linter please run:
+```
+   npm run lint
+```
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
