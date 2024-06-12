@@ -33,7 +33,7 @@ export const HomeScreen = () => {
         'https://blackbullion.com/api/_dev/pathways'
         ).then(response => response.json()).then(json => setData(json));
         setLoaded(true);
-    }
+    };
   }, [data, loaded]);
 
   return (
