@@ -1,5 +1,6 @@
 export interface pathwayData {
   id: number,
+  internal_title: string,
   title: string,
   url: string,
   intro: string, 

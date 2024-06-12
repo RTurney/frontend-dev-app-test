@@ -17,6 +17,7 @@ export default function index() {
   const [data, setData] = useState<pathwayData[]>([{
     id: -1,
     title: "",
+    internal_title: "",
     url: "",
     intro: "", 
     duration: "", 
