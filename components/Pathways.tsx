@@ -30,7 +30,6 @@ export const Pathways: FC<PathwaysProps> = ({data}) => {
             />}
         keyExtractor={item => String(item.id)}
         initialNumToRender={20}
-        maxToRenderPerBatch={10}
       />
     </FlatListView>
   )

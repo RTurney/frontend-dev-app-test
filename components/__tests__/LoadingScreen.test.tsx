@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react-native';
-import { LoadingScreen } from '../LoadingScreen';
+import { LoadingScreen } from '../Screens/LoadingScreen';
 
 describe('Loading Screen component', () => {
   it('renders with loading screen text', () => {
