@@ -1,4 +1,4 @@
-# This is the Blackbullion Frontend dev test app
+# Blackbullion Frontend dev test app
 
 Hi, this is my attempt at the Blackbullion front-end dev test app. I have included the initial instructions in the Instructions.md file. 
 
@@ -15,25 +15,27 @@ After that you are free to begin the setup by folliwng the steps below:
    ```
    nvm use
    ```
+
    This will switch you to a version of node which is usable with this project. You may need to install this version of node if you do not already have it in your version manager
 
 
  2. Install dependencies
 
-   ```
-   npm install
-   ```
+      ```
+      npm install
+      ```
 
 3. Start the app
 
    ```
-    npm run start
+   npm run start
    ```
+
    Once the app has started, it will begin running metro. You will have a choice of running the app either on an Android emulator, iOS simulator or even your own device if you scan the expo QR code. 
 
    Once the app is loaded, you should be met by the following screen: 
 
-   <img src="img/screenshot.png.png" alt="App Screenshot" width="250" >
+   <img src="img/screenshot.png" alt="App Screenshot" height="350" >
 
 ## Testing 
 
